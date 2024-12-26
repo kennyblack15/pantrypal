@@ -1,0 +1,87 @@
+Screenshot Specifications for PantryPal
+
+Required Screenshots (8):
+
+1. Home Screen
+- Show ingredient recognition in action
+- Camera viewfinder with ingredients
+- Clean, modern interface
+Resolution: 1242 x 2688 (iPhone)
+
+2. Recipe Suggestions
+- AI-generated recipe cards
+- Beautiful food photography
+- Rating and difficulty indicators
+Resolution: 1242 x 2688 (iPhone)
+
+3. Recipe Details
+- Step-by-step instructions
+- Ingredient list with checkboxes
+- Nutritional information panel
+Resolution: 1242 x 2688 (iPhone)
+
+4. Meal Planning
+- Weekly calendar view
+- Meal slots with recipes
+- Shopping list integration
+Resolution: 1242 x 2688 (iPhone)
+
+5. Shopping List
+- Categorized ingredients
+- Checkbox functionality
+- Add/remove items
+Resolution: 1242 x 2688 (iPhone)
+
+6. Profile & Preferences
+- Dietary restrictions
+- Allergies settings
+- Favorite recipes
+Resolution: 1242 x 2688 (iPhone)
+
+7. Nutritional Analysis
+- Detailed macro breakdown
+- Vitamin and mineral content
+- Health insights
+Resolution: 1242 x 2688 (iPhone)
+
+8. Social Features
+- Recipe sharing
+- Community ratings
+- Comments section
+Resolution: 1242 x 2688 (iPhone)
+
+Design Guidelines:
+- Use real food photography
+- Show actual UI elements
+- Include user interaction hints
+- Maintain consistent lighting
+- Use high-contrast text
+- Include app branding
+- Show features in context
+
+Languages to Support:
+- English (en-US)
+- Spanish (es-ES)
+- French (fr-FR)
+- German (de-DE)
+- Italian (it-IT)
+- Japanese (ja-JP)
+- Korean (ko-KR)
+- Chinese Simplified (zh-CN)
+
+Each screenshot should be localized with:
+- Translated text
+- Culturally appropriate food items
+- Local measurements (metric/imperial)
+- Regional ingredient names
+- Local currency if applicable
+
+File Naming Convention:
+[language_code]_[screen_number]_[screen_name].png
+Example: en-US_01_home_screen.png
+
+Required Formats:
+- PNG format
+- RGB color space
+- No alpha channel
+- Maximum file size: 8MB per image

@@ -1,0 +1,59 @@
+default_platform(:android)
+
+platform :android do
+  desc "Submit a new Beta Build to Play Store"
+  lane :beta do
+    gradle(
+      task: "clean assembleRelease",
+      properties: {
+        "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"],
+        "android.injected.signing.store.password" => ENV["STORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"],
+      }
+    )
+    
+    upload_to_play_store(
+      track: 'beta',
+      json_key: ENV['PLAY_STORE_CONFIG_JSON'],
+      skip_upload_metadata: false,
+      skip_upload_images: false,
+      skip_upload_screenshots: false,
+      validate_only: false
+    )
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :production do
+    gradle(
+      task: "clean assembleRelease",
+      properties: {
+        "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"],
+        "android.injected.signing.store.password" => ENV["STORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"],
+      }
+    )
+    
+    upload_to_play_store(
+      track: 'production',
+      json_key: ENV['PLAY_STORE_CONFIG_JSON'],
+      skip_upload_metadata: false,
+      skip_upload_images: false,
+      skip_upload_screenshots: false
+    )
+  end
+
+  desc "Upload metadata only"
+  lane :metadata do
+    upload_to_play_store(
+      track: 'production',
+      json_key: ENV['PLAY_STORE_CONFIG_JSON'],
+      skip_upload_apk: true,
+      skip_upload_aab: true,
+      skip_upload_metadata: false,
+      skip_upload_images: false,
+      skip_upload_screenshots: false
+    )
+  end
+end

@@ -1,0 +1,73 @@
+Privacy Policy for PantryPal
+
+Last updated: [Current Date]
+
+1. Information We Collect
+
+a) User-Provided Information:
+- Email address for account creation
+- User preferences (dietary restrictions, allergies)
+- Recipe ratings and reviews
+- Photos of ingredients
+- Saved recipes and meal plans
+
+b) Automatically Collected Information:
+- Device information
+- Usage statistics
+- App performance data
+
+2. How We Use Your Information
+
+We use your information to:
+- Provide personalized recipe suggestions
+- Analyze ingredients in photos
+- Create customized meal plans
+- Save your preferences and history
+- Improve our services
+- Send important updates
+
+3. Data Storage and Security
+
+- All data is encrypted in transit and at rest
+- We use industry-standard security measures
+- Regular security audits and updates
+- User data is stored in secure cloud services
+
+4. Third-Party Services
+
+We use:
+- Google Cloud Vision API for image analysis
+- OpenAI API for recipe suggestions
+- MongoDB for data storage
+- Firebase for analytics
+
+5. Your Rights
+
+You can:
+- Access your personal data
+- Request data deletion
+- Export your data
+- Update your preferences
+- Opt out of analytics
+
+6. Data Retention
+
+- Account data: Stored until account deletion
+- Photos: Processed immediately, not stored
+- Usage data: 90 days
+- Anonymized analytics: Indefinitely
+
+7. Children's Privacy
+
+PantryPal is not intended for children under 13.
+
+8. Changes to Policy
+
+We will notify users of significant policy changes.
+
+9. Contact Us
+
+Questions? Contact us at:
+support@pantrypal.com
+
+Full policy: [Website URL]

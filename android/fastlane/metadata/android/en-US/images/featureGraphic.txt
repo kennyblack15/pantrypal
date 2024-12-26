@@ -1,0 +1,11 @@
+Feature Graphic Specifications:
+Size: 1024x500 pixels
+Background: Gradient from deep purple (#4A148C) to warm orange (#FF5722)
+Main Elements:
+- Hero image: Beautiful food photography of a gourmet meal
+- App logo: PantryPal icon with glow effect
+- Tagline: "Turn Photos into Delicious Meals"
+- AI visualization elements: Subtle neural network patterns
+- Food ingredients scattered artistically
+
+Note: The actual feature graphic should be created as a PNG file using these specifications.

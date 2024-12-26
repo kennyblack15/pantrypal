@@ -1,0 +1,51 @@
+PantryPal: Tu Asistente de Cocina con IA
+
+Transforma tu experiencia culinaria con PantryPal, el compañero inteligente de recetas que convierte tus ingredientes en deliciosas comidas. Simplemente toma una foto de tus ingredientes y deja que nuestra IA sugiera recetas personalizadas adaptadas a tus preferencias y necesidades dietéticas.
+
+Características Principales:
+🔍 Reconocimiento Instantáneo de Ingredientes
+- Toma una foto de tus ingredientes
+- Tecnología de reconocimiento con IA
+- Funciona con productos frescos, empaquetados y de despensa
+
+👩‍🍳 Sugerencias Inteligentes de Recetas
+- Recomendaciones personalizadas
+- Soporte para restricciones dietéticas
+- Instrucciones paso a paso
+- Hermosas fotografías de alimentos
+
+🥗 Análisis Nutricional
+- Información nutricional detallada
+- Seguimiento de calorías
+- Desglose de macro y micronutrientes
+- Consejos e información de salud
+
+📋 Planificación de Comidas
+- Planificación semanal de comidas
+- Listas de compras inteligentes
+- Sustituciones de ingredientes
+- Calculadora de porciones
+
+🔒 Perfil Personal
+- Guarda tus recetas favoritas
+- Rastrea tu historial de cocina
+- Establece preferencias dietéticas
+- Califica y reseña recetas
+
+Características Adicionales:
+- Acceso a recetas sin conexión
+- Cocina guiada por voz
+- Soporte para múltiples idiomas
+- Comparte recetas con amigos
+- Integración con lista de compras
+- Temporizador de cocina
+- Conversor de unidades
+
+Perfecto para:
+- Cocineros caseros de todos los niveles
+- Profesionales ocupados
+- Personas conscientes de la salud
+- Preparadores de comidas
+- Cualquiera que busque reducir el desperdicio de alimentos
+
+¡Descarga PantryPal hoy y convierte tus ingredientes en inspiración!

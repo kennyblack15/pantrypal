@@ -1,0 +1,60 @@
+apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
+
+import com.android.build.OutputFile
+
+def projectProperties = new Properties()
+def projectPropertiesFile = rootProject.file('local.properties')
+if (projectPropertiesFile.exists()) {
+    projectProperties.load(projectPropertiesFile.newDataInputStream())
+}
+
+android {
+    ndkVersion rootProject.ext.ndkVersion
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    namespace "com.pantrypal"
+    defaultConfig {
+        applicationId "com.pantrypal"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    signingConfigs {
+        release {
+            if (projectProperties.containsKey('MYAPP_UPLOAD_STORE_FILE')) {
+                storeFile file(projectProperties['MYAPP_UPLOAD_STORE_FILE'])
+                storePassword projectProperties['MYAPP_UPLOAD_STORE_PASSWORD']
+                keyAlias projectProperties['MYAPP_UPLOAD_KEY_ALIAS']
+                keyPassword projectProperties['MYAPP_UPLOAD_KEY_PASSWORD']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    // applicationVariants are e.g. debug, release
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            // For each separate APK per architecture, set a unique version code
+            def versionCodes = ["armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4]
+            def abi = output.getFilter(OutputFile.ABI)
+            if (abi != null) {  // null for the universal-debug, universal-release variants
+                output.versionCodeOverride =
+                        defaultConfig.versionCode * 1000 + versionCodes.get(abi)
+            }
+        }
+    }
+}
